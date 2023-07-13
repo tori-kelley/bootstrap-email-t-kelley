@@ -23,7 +23,8 @@ body {
 }
 
 .options {
-    background: aqua;
+    background-image: url(https://images.pexels.com/photos/2803247/pexels-photo-2803247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background: black;
 }
 
 .navbar-toggler {
@@ -36,11 +37,14 @@ body {
 }
 
 .emails {
-    background: royalblue;
+    /* background: royalblue; */
+    background-image: url(https://images.pexels.com/photos/2803247/pexels-photo-2803247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
 }
 
-.compose {
-    background: blueviolet;
+.compose{
+    flex-direction: column;
+    /* background: rgb(49, 5, 121); */
+    background: black;
 }
 
 nav {
@@ -51,6 +55,26 @@ nav {
     background: darkblue;
 }
 
-/* .search-input {
+.compose-header {
+    color:blue;
+}
 
-} */
+.composition-box {
+    flex-direction: column;
+}
+
+.nav-item {
+    /* background-color: royalblue; */
+    color:aqua;
+    width:150px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 255, .2);
+}
+
+.send-options {
+    flex-direction: row;
+}
+
+.send-button {
+    width:100px;
+}

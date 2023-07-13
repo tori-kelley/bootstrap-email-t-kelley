@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/66359ca774.js" crossorigin="anonymous"></script>    
     <title>Bootstrap Email by Tori Kelley</title>
 </head>
-<body>
+<body data-bs-theme="dark">
 
     <!-- this is the code for the bar on the top -->
     <div class="navbar">
@@ -23,11 +23,11 @@
             <div class="table-of-contents collapse navbar-collapse w-25" id="navbarSupportedContent">
             </div>
             <div class="site-name">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="anonymail" href="#">ANONYMAIL</a>
             </div>
             <div class="searchbar-and-magnifying-glass">
                 <form class="d-none d-md-flex" role="search">
-                    <input class="search-input form-control me-2" type="search" placeholder="type a keyword here" aria-label="Search" data-bs-theme="dark">
+                    <input class="search-input form-control me-2" type="search" placeholder="type a keyword here" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <i class="fa-solid fa-magnifying-glass d-flex d-md-none"></i>
@@ -39,17 +39,17 @@
     
     <div class="container"></div>
         <div class="row h-100">
-            <div class="d-none d-md-flex col-md-3 col-lg-2 options">options
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="d-none d-md-flex col-md-3 col-lg-2 options justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-evenly align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Directory</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        User
                         </a>
                         <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -64,11 +64,34 @@
                     </ul>
 
             </div>
-            <div class="d-flex col-sm-12 col-md-9 col-lg-5 emails">emails</div>
-            <div class="d-flex col-sm-12 col-lg-5 compose">compose</div>
+            <div class="d-flex col-sm-12 col-md-9 col-lg-5 emails">
+                <div class="email">
+                    <p>this is an email </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around align-items-center col-lg-5 compose">
+                <h3>Compose a new message</h3>
+                <div class="d-none d-md-flex composition-box input-group h-75">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@anonymail.com</span>
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Subject:</span>
+                        <input type="text" class="form-control" aria-describedby="addon-wrapping">
+                    </div>                      
+                    <textarea class="form-control w-100" name="short_desc" required></textarea>
+                </div>
+                <div class="send-options w-100 d-flex justify-content-evenly">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">reveal my identity</label>
+                      </div>
+                    <button type="button" class="btn btn-outline-secondary send-button">Send</button>
+                </div>
+            </div>
         </div>    
     </div>
-    <!-- <button class="btn"><i class="fa fa-home"></i></button>
-    <button class="btn"><i class="fa fa-magnifying-glass"></i></button> -->
+
 </body>
 </html>
