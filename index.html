@@ -12,11 +12,60 @@
     <title>Bootstrap Email by Tori Kelley</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-1 col-md-3 col-lg-2">options</div>
-            <div class="col-sm-12 col-md-9 col-lg-5">emails</div>
-            <div class="col-sm-12 col-md-12 col-lg-5">compose</div>
+
+    <!-- this is the code for the bar on the top -->
+    <div class="navbar">
+        <nav class="d-flex navbar-expand-md bg-body-tertiary w-100">
+            <div class="navbar-contents container-fluid d-flex justify-content-around w-100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="table-of-contents collapse navbar-collapse w-25" id="navbarSupportedContent">
+            </div>
+            <div class="site-name">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+            <div class="searchbar-and-magnifying-glass">
+                <form class="d-none d-md-flex" role="search">
+                    <input class="search-input form-control me-2" type="search" placeholder="type a keyword here" aria-label="Search" data-bs-theme="dark">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <i class="fa-solid fa-magnifying-glass d-flex d-md-none"></i>
+            </div>
+        </div>
+        </nav>
+    </div>
+
+    
+    <div class="container"></div>
+        <div class="row h-100">
+            <div class="d-none d-md-flex col-md-3 col-lg-2 options">options
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    </ul>
+
+            </div>
+            <div class="d-flex col-sm-12 col-md-9 col-lg-5 emails">emails</div>
+            <div class="d-flex col-sm-12 col-lg-5 compose">compose</div>
         </div>    
     </div>
     <!-- <button class="btn"><i class="fa fa-home"></i></button>

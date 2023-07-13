@@ -1,0 +1,56 @@
+body {
+    /* background-color: black; */
+    height: 100vh;
+}
+.btn {
+    background-color: aqua;
+    color: black;
+}
+
+.btn:hover {
+    background-color: royalblue;
+}
+
+.navbar {
+    /* display: flex;
+    justify-content: space-around; */
+    width: 100%;
+    background: darkblue;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.options {
+    background: aqua;
+}
+
+.navbar-toggler {
+    background-color: aqua;
+}
+
+.fa-magnifying-glass {
+    font-size: 5vh;
+    color: aqua;
+}
+
+.emails {
+    background: royalblue;
+}
+
+.compose {
+    background: blueviolet;
+}
+
+nav {
+    flex-direction: row;
+}
+
+.navbar-contents {
+    background: darkblue;
+}
+
+/* .search-input {
+
+} */
