@@ -1,8 +1,7 @@
 body {
-    /* background-color: black; */
     height: 100vh;
     width: 100vw;
-    font-family: "Victor Mono", sans-serif;
+    font-family: "Victor Mono", monospace, serif;
 }
 .btn {
     background-color: aqua;
@@ -14,8 +13,6 @@ body {
 }
 
 .navbar {
-    /* display: flex;
-    justify-content: space-around; */
     width: 100%;
     background: darkblue;
 }
@@ -66,12 +63,22 @@ nav {
     flex-direction: column;
 }
 
-.nav-item {
-    /* background-color: royalblue; */
+.menu-item {
     color:aqua;
-    width:150px;
+    width:130px;
     text-align: center;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 255, .2);
+    list-style: none;
+}
+
+.menu-item:hover {
+    color:white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.5);
+}
+
+.menu-item:active {
+    color:white;
+    box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.9);
 }
 
 .send-options {
@@ -84,21 +91,42 @@ nav {
 
 .email {
     background-color: rgba(0, 0,0, 0.568);
-    /* color:aqua; */
     width:150px;
-    /* text-align: center; */
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 255, .2);
     margin: 25px 0px 10px 0px;
     padding: 5px 5px 5px 5px;
+}
+.email:hover {
+    background-color: rgba(0, 0,0, 0.7);
+    box-shadow: 0px 0px 10px 5px rgba(0, 170, 255, 0.729);
+}
+
+.email:active {
+    box-shadow: 0px 0px 10px 10px rgba(0, 170, 255, 1);
 }
 
 .site-name-logo {
     font-size: 3vh;
     font-family: "Agdasima", sans-serif;
     color: rgb(88, 147, 255);
+    width: 120px
 }
 
 .magnify-button {
     background: none;
     border: none;
+}
+
+.dropdown-item {
+    width:20px;
+
+}
+
+.nav-item {
+    font-size: 14px;
+    margin: 0 5px 0 8px;
+}
+
+h6 {
+    font-size: 0.95em;
 }
