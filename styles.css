@@ -117,6 +117,10 @@ nav {
     border: none;
 }
 
+.magnify-button:active {
+    display: none;
+}
+
 .dropdown-item {
     width:20px;
 
@@ -129,4 +133,12 @@ nav {
 
 h6 {
     font-size: 0.95em;
+}
+
+.highlighted-message {
+    color:aqua;
+}
+
+input[id="username"] {
+    text-align: right;
 }
