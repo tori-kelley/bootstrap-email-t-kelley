@@ -53,7 +53,7 @@
                     <a class="anonymail" href="#"><strong>ANONYMAIL</strong></a>
                 </div>
                 <div class="searchbar-and-magnifying-glass d-flex flex-column align-items-start">
-                    <button type="btn" class="navbar-toggler d-flex d-md-none magnify-button" data-toggle="collapse" data-target="#searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="btn" class="navbar-toggler d-flex d-md-none my-button" data-toggle="collapse" data-target="#searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <form class="d-md-flex navbar-collapse collapse w-100 align-self-end" id="searchbar" role="search">
                         <div class="d-flex flex-row">
                             <input class="search-input form-control me-2" type="search" placeholder="keyword" aria-label="Search">
@@ -120,7 +120,7 @@
                 </div>
                 <div class="email w-75">
                     <div class="message-deets d-flex justify-content-between">
-                        <h4 class="subject">My BLT sandwich</h4>
+                        <h4 class="subject">My BLT</h4>
                         <h6 class="text-right">Anonymous <br> July 17, 2023</h6>
                     </div>
                     <p class="h-25 text-truncate">I know that you're the one who ate my sandwich, even though I CLEARLY marked it</p>
@@ -141,7 +141,15 @@
                 
                 <div class="d-none d-lg-flex highlighted-message input-group h-75 flex-column">
                     <div class="message-container d-flex justify-content-around flex-column">
-                        <h1 class="subject">My BLT sandwich</h1>
+                        <div class="d-flex flex-row justify-content-between">
+                            <h1 class="subject">My BLT</h1>
+                            <div class="email-response-options">
+                                <button type="btn" class="my-button"><i class="fa-solid fa-reply"></i></button>
+                                <button type="btn" class="my-button"><i class="fa-solid fa-trash"></i></button>
+                                <button type="btn" class="my-button"><i class="fa-solid fa-flag"></i></button>
+                                <button type="btn" class="my-button"><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
                         <div class="message-deets-highlighted d-flex d-row-wrap w-100">
                             <i class="fa-sharp fa-solid fa-user-secret profile-pic text-center"></i>
                             <div class="d-column">
@@ -151,7 +159,7 @@
                         </div>
                         <p class="text-justify"><br>I know that you're the one who ate my sandwich, even though I CLEARLY marked it with my name. I guess you must've missed that, huh? I hope you don't mind, I helped myself to your stash of thin mint oreos, since APPARENTLY there's no such thing as private property in a communal fridge. <br> Maybe next time you'll think twice before you eat someone else's lunch. <br> <br>~ a Hangry Coworker</p>
                     </div>
-                    <textarea class="form-control w-100" name="short_desc" placeholder="reply" required></textarea>
+                    <textarea class="form-control w-100" name="short_desc" placeholder="reply..." required></textarea>
                     <button type="button" class="btn btn-outline-secondary send-button align-self-end"> Send <i class="fa-solid fa-paper-plane"></i></button>
                 </div>
 

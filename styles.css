@@ -106,19 +106,19 @@ nav {
 }
 
 .site-name-logo {
-    font-size: 3vh;
+    font-size: 25px;
     font-family: "Agdasima", sans-serif;
     color: rgb(88, 147, 255);
     width: 120px
 }
 
-.magnify-button {
+.my-button {
     background: none;
     border: none;
 }
 
-.magnify-button:active {
-    display: none;
+.my-button:hover {
+    scale:95%;
 }
 
 .dropdown-item {
