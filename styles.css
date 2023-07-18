@@ -132,13 +132,29 @@ nav {
 }
 
 h6 {
-    font-size: 0.95em;
-}
-
-.highlighted-message {
-    color:aqua;
+    font-size: 0.9em;
 }
 
 input[id="username"] {
     text-align: right;
+}
+
+.message-container {
+    border: 2px solid aqua;
+    padding: 10px;
+}
+
+.profile-pic {
+    font-size: 50px;
+    color: aqua;
+    border: 3px solid aqua;
+    width:65px;
+    height:65px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.message-deets-highlighted {
+    scale: 75% 75%;
+    transform-origin: left;
 }

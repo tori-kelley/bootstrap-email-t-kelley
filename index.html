@@ -31,7 +31,7 @@
                             <a class="nav-link active" href="#">profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">directory</a>
+                            <a class="nav-link active" href="#">users</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">inbox</a>
@@ -71,22 +71,34 @@
             <div class="d-none d-md-flex col-md-3 col-lg-2 options justify-content-center">
                 <ul class="mb-2 mb-lg-0 d-flex flex-column justify-content-evenly align-items-center h-75">
                     <li class="menu-item">
-                        <a class="nav-link active" href="#">profile</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-sharp fa-solid fa-user-secret"></i>
+                            profile</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link active" href="#">directory</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-sharp fa-regular fa-address-book"></i>
+                            users</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link active" href="#">inbox</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-inbox"></i>
+                            inbox</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link active" href="#">drafts</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-file-pen"></i>
+                            drafts</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link active" href="#">spam</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-dumpster-fire"></i>
+                            spam</a>
                     </li>
                     <li class="menu-item">
-                        <a class="nav-link active" href="#">trash</a>
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-trash"></i>
+                            trash</a>
                     </li>
                     </ul>
 
@@ -108,10 +120,10 @@
                 </div>
                 <div class="email w-75">
                     <div class="message-deets d-flex justify-content-between">
-                        <h4 class="subject">My BLT</h4>
+                        <h4 class="subject">My BLT sandwich</h4>
                         <h6 class="text-right">Anonymous <br> July 17, 2023</h6>
                     </div>
-                    <p class="text-truncate h-25">I know you ate my sandwich, and you're gonna pay for what you did.</p>
+                    <p class="h-25 text-truncate">I know that you're the one who ate my sandwich, even though I CLEARLY marked it</p>
                 </div>
                 <div class="email w-75">
                     <div class="message-deets d-flex justify-content-between">
@@ -128,13 +140,19 @@
                 
                 
                 <div class="d-none d-lg-flex highlighted-message input-group h-75 flex-column">
-                    <div class="message-deets d-flex justify-content-between">
-                        <h3 class="subject">My BLT</h3>
-                        <h5 class="text-right">Anonymous <br> July 17, 2023</h5>
+                    <div class="message-container d-flex justify-content-around flex-column">
+                        <h1 class="subject">My BLT sandwich</h1>
+                        <div class="message-deets-highlighted d-flex d-row-wrap w-100">
+                            <i class="fa-sharp fa-solid fa-user-secret profile-pic text-center"></i>
+                            <div class="d-column">
+                                <h5><strong>Anonymous</strong></h5>
+                                <h6>July 17, 2023</h6>
+                            </div>
+                        </div>
+                        <p class="text-justify"><br>I know that you're the one who ate my sandwich, even though I CLEARLY marked it with my name. I guess you must've missed that, huh? I hope you don't mind, I helped myself to your stash of thin mint oreos, since APPARENTLY there's no such thing as private property in a communal fridge. <br> Maybe next time you'll think twice before you eat someone else's lunch. <br> <br>~ a Hangry Coworker</p>
                     </div>
-                    <p><br><br>I know that you're the one who ate my sandwich, even though I CLEARLY marked it with my name. I guess you must've missed that, huh? I hope you don't mind, I helped myself to your stash of thin mint oreos, since APPARENTLY there's no such thing as private property in a communal fridge. <br> Maybe next time you'll think twice before you eat someone else's lunch. <br> <br>~ a Hangry Coworker</p>
                     <textarea class="form-control w-100" name="short_desc" placeholder="reply" required></textarea>
-                    <button type="button" class="btn btn-outline-secondary send-button align-self-end">Send</button>
+                    <button type="button" class="btn btn-outline-secondary send-button align-self-end"> Send <i class="fa-solid fa-paper-plane"></i></button>
                 </div>
 
 
@@ -151,7 +169,7 @@
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                             <label class="form-check-label" for="flexSwitchCheckDefault">reveal my identity</label>
                         </div>
-                        <button type="button" class="btn btn-outline-secondary send-button">Send</button>
+                        <button type="button" class="btn btn-outline-secondary send-button">Send <i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                 </div>
 
