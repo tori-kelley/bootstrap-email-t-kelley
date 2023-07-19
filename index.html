@@ -10,23 +10,25 @@
     <!--font awesome icons-->
     <script src="https://kit.fontawesome.com/66359ca774.js" crossorigin="anonymous"></script>    
     <title>Bootstrap Email by Tori Kelley</title>
-    <!-- custom fonts -->
+    <!-- custom font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agdasima">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Victor+Mono">
 </head>
+
 <body data-bs-theme="dark">
 
     <!-- this is the code for the bar on the top -->
     <div class="navbar">
         <nav class="d-flex bg-body-tertiary w-100">
             <div class="navbar-contents container-fluid d-flex justify-content-around w-100">
-
-                <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <!-- here's the hamburger -->
+                <button class="navbar-toggler d-md-none shrink-button" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- here's the options that expand when the hamburger is activated -->
                 <div class="navbar-collapse collapse d-md-none" id="navbarText">
-                    <!-- ^here -->
-                    <ul class="navbar-nav d-flex d-md-none flex-row justify-content-around w-75 flex-wrap">
+                    <ul class="navbar-nav d-flex w-75 d-md-none flex-row justify-content-around flex-wrap">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">profile</a>
                         </li>
@@ -45,30 +47,34 @@
                     </ul>
                 </div>
                 
-
-
-
+                <!-- here's the ANONYMAIL logo -->
                 <div class="site-name-logo">
                     <i class="fa-sharp fa-solid fa-user-secret"></i>
                     <a class="anonymail" href="#"><strong>ANONYMAIL</strong></a>
                 </div>
+
+                <!-- here's the magnifying glass -->
                 <div class="searchbar-and-magnifying-glass d-flex flex-column align-items-start">
-                    <button type="btn" class="navbar-toggler d-flex d-md-none my-button" data-toggle="collapse" data-target="#searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="btn" class="navbar-toggler d-flex d-md-none shrink-button" data-toggle="collapse" data-target="#searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    <!-- here's the search bar that pops up when the magnifying glass button is activated -->
                     <form class="d-md-flex navbar-collapse collapse w-100 align-self-end" id="searchbar" role="search">
                         <div class="d-flex flex-row">
                             <input class="search-input form-control me-2" type="search" placeholder="keyword" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="btn btn-outline-success" type="reset">Search</button>
                         </div>
                     </form>
-            </div>
+                </div>
             </div>
         </nav>
     </div>
 
-    
+    <!-- here's the container for the 3 columns -->
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <div class="d-none d-md-flex col-md-3 col-lg-2 options justify-content-center">
+
+            <!-- options column -->
+            <div class="options d-none d-md-flex col-md-3 col-lg-2 justify-content-center">
                 <ul class="mb-2 mb-lg-0 d-flex flex-column justify-content-evenly align-items-center h-75">
                     <li class="menu-item">
                         <a class="nav-link active" href="#">
@@ -100,23 +106,24 @@
                             <i class="fa-solid fa-trash"></i>
                             trash</a>
                     </li>
-                    </ul>
-
+                </ul>
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-center col-sm-12 col-md-9 col-lg-5 emails flex-grow-1">
+
+            <!-- emails column -->
+            <div class="emails d-flex flex-column justify-content-start align-items-center col-sm-12 col-md-9 col-lg-5 flex-grow-1">
                 <div class="email w-75">
                     <div class="message-deets d-flex justify-content-between">
-                        <h4 class="subject">Mr.Loofa's disappearance</h4>
+                        <h4 class="subject">Mr. McNibbles' disappearance</h4>
                         <h6 class="text-right">Anonymous <br> 2:43 AM</h6>
                     </div>
-                    <p class="text-truncate h-25">Your hamster didn't die of natural causes... I'm so sorry</p>
+                    <p class="text-truncate h-25">Your hamster didn't die of natural causes. The microwave was left open and I am so, so sorry.</p>
                 </div>
                 <div class="email w-75">
                     <div class="message-deets d-flex justify-content-between">
                         <h4 class="subject">Trees :)</h4>
                         <h6 class="text-right">Evan Hansen <br> Yesterday</h6>
                     </div>
-                    <p class="text-truncate h-25">I'm sending pictures of the most amazing trees. You'll be impressed by all my forrest expertise.</p>
+                    <p class="text-truncate h-25">I'm sending pictures of the most amazing trees. You'll be impressed by all my forest expertise.</p>
                 </div>
                 <div class="email w-75">
                     <div class="message-deets d-flex justify-content-between">
@@ -133,37 +140,14 @@
                     <p class="text-truncate h-25"> heyy j wanted to let u know orange is NOT ur color. i say it out of love xoxo </p>
                 </div>
             </div>
-            <div class="d-flex justify-content-around align-items-center col-lg-5 compose">
 
+            <!-- compose/reply column -->
+            <div class="compose-reply d-flex justify-content-around align-items-center col-lg-5 flex-column">
 
+                <!-- compose button -->
                 <h3 class="d-flex d-lg-none"><button class="btn" data-toggle="collapse" data-target="#composition-box">Compose a new message <i class="fa-regular fa-pen-to-square"></i></button></h3>
                 
-                
-                <div class="d-none d-lg-flex highlighted-message input-group h-75 flex-column">
-                    <div class="message-container d-flex justify-content-around flex-column">
-                        <div class="d-flex flex-row justify-content-between">
-                            <h1 class="subject">My BLT</h1>
-                            <div class="email-response-options">
-                                <button type="btn" class="my-button"><i class="fa-solid fa-reply"></i></button>
-                                <button type="btn" class="my-button"><i class="fa-solid fa-trash"></i></button>
-                                <button type="btn" class="my-button"><i class="fa-solid fa-flag"></i></button>
-                                <button type="btn" class="my-button"><i class="fa-solid fa-ellipsis"></i></button>
-                            </div>
-                        </div>
-                        <div class="message-deets-highlighted d-flex d-row-wrap w-100">
-                            <i class="fa-sharp fa-solid fa-user-secret profile-pic text-center"></i>
-                            <div class="d-column">
-                                <h5><strong>Anonymous</strong></h5>
-                                <h6>July 17, 2023</h6>
-                            </div>
-                        </div>
-                        <p class="text-justify"><br>I know that you're the one who ate my sandwich, even though I CLEARLY marked it with my name. I guess you must've missed that, huh? I hope you don't mind, I helped myself to your stash of thin mint oreos, since APPARENTLY there's no such thing as private property in a communal fridge. <br> Maybe next time you'll think twice before you eat someone else's lunch. <br> <br>~ a Hangry Coworker</p>
-                    </div>
-                    <textarea class="form-control w-100" name="short_desc" placeholder="reply..." required></textarea>
-                    <button type="button" class="btn btn-outline-secondary send-button align-self-end"> Send <i class="fa-solid fa-paper-plane"></i></button>
-                </div>
-
-
+                <!-- composition box that pops up when compose button is activated -->
                 <div class="general-compose collapse navbar-collapse d-lg-none" id="composition-box">
                     <div class="d-column input-group h-75">
                         <span class="input-group-text" id="addon-wrapping">Subject:</span>
@@ -177,15 +161,49 @@
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                             <label class="form-check-label" for="flexSwitchCheckDefault">reveal my identity</label>
                         </div>
-                        <button type="button" class="btn btn-outline-secondary send-button">Send <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="button" class="btn btn-outline-secondary send-button">Send<i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                 </div>
 
+                <!-- displayed message + reply-->
+                <div class="highlighted-message d-none d-lg-flex input-group h-75 flex-column">
+                    <div class="message-container d-flex justify-content-around flex-column">
+                        <div class="d-flex flex-row justify-content-between">
 
+                            <!-- subject -->
+                            <h1 class="subject">My BLT</h1>
+
+                            <!-- email response options -->
+                            <div class="email-response-options">
+                                <button type="btn" class="shrink-button"><i class="fa-solid fa-reply"></i></button>
+                                <button type="btn" class="shrink-button"><i class="fa-solid fa-trash"></i></button>
+                                <button type="btn" class="shrink-button"><i class="fa-solid fa-flag"></i></button>
+                                <button type="btn" class="shrink-button"><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- sender and date -->
+                        <div class="message-deets-highlighted d-flex d-row-wrap w-100">
+                            <i class="fa-sharp fa-solid fa-user-secret profile-pic text-center"></i>
+                            <div class="d-column">
+                                <h5><strong>Anonymous</strong></h5>
+                                <h6>July 17, 2023</h6>
+                            </div>
+                        </div>
+
+                        <!-- displayed message -->
+                        <p class="text-justify"><br>I know that you're the one who ate my sandwich, even though I CLEARLY marked it with my name. I guess you must've missed that, huh? I hope you don't mind, I helped myself to your stash of thin mint oreos, since APPARENTLY there's no such thing as private property in a communal fridge. <br> Maybe next time you'll think twice before you eat someone else's lunch. <br> <br>~ a Hangry Coworker</p>
+                    </div>
+
+                    <!-- reply text box -->
+                    <textarea class="form-control w-100" name="short_desc" placeholder="reply..."></textarea>
+
+                    <!-- send button -->
+                    <button type="button" class="send-button btn btn-outline-secondary align-self-end"> Send <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
             </div>
         </div>    
     </div>
-
 
     <!-- bootstrap scripts to make the dropdowns work -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
