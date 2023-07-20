@@ -16,36 +16,15 @@
 
 <body data-bs-theme="dark">
 
-    <!-- this is the code for the bar on the top -->
+    <!-- code for the bar on the top -->
     <div class="navbar">
         <nav class="d-flex bg-body-tertiary w-100">
             <div class="navbar-contents container-fluid d-flex justify-content-around w-100">
                 
-                <!-- here's the hamburger -->
+                <!-- the hamburger -->
                 <button class="navbar-toggler d-md-none shrink-button" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- here's the options that expand when the hamburger is activated -->
-                <div class="navbar-collapse collapse d-md-none" id="navbarText">
-                    <ul class="navbar-nav d-flex w-75 d-md-none flex-row justify-content-around flex-wrap">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">users</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">inbox</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">spam</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">trash</a>
-                        </li>
-                    </ul>
-                </div>
                 
                 <!-- here's the ANONYMAIL logo -->
                 <div class="site-name-logo">
@@ -53,12 +32,12 @@
                     <a class="anonymail" href="#"><strong>ANONYMAIL</strong></a>
                 </div>
 
-                <!-- here's the magnifying glass -->
+                <!-- magnifying glass button for sm-->
                 <div class="searchbar-and-magnifying-glass d-flex flex-column align-items-start">
-                    <button type="btn" class="navbar-toggler d-flex d-md-none shrink-button" data-toggle="collapse" data-target="#searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" class="navbar-toggler d-flex d-md-none shrink-button" data-toggle="collapse" data-target="#searchbar"><i class="fa-solid fa-magnifying-glass"></i></button>
 
-                    <!-- here's the search bar that pops up when the magnifying glass button is activated -->
-                    <form class="d-md-flex navbar-collapse collapse w-100 align-self-end" id="searchbar" role="search">
+                    <!-- searchbar in navbar for md -->
+                    <form class="d-none d-md-flex w-100 align-self-end"  role="search">
                         <div class="d-flex flex-row">
                             <input class="search-input form-control me-2" type="search" placeholder="keyword" aria-label="Search">
                             <button class="btn btn-outline-success" type="reset">Search</button>
@@ -69,13 +48,21 @@
         </nav>
     </div>
 
-    <!-- here's the container for the 3 columns -->
+    <!-- external searchbar to pop out for sm, activated by magnifying glass -->
+    <form class="d-md-none collapse w-100 align-self-end" id="searchbar" role="search">
+        <div class="d-flex flex-row">
+            <input class="search-input form-control me-2" type="search" placeholder="keyword" aria-label="Search">
+            <button class="btn btn-outline-success" type="reset">Search</button>
+        </div>
+    </form>
+
+    <!-- container for the 3 columns -->
     <div class="container-fluid h-100">
         <div class="row h-100">
 
-            <!-- options column -->
-            <div class="options d-none d-md-flex col-md-3 col-lg-2 justify-content-center">
-                <ul class="mb-2 mb-lg-0 d-flex flex-column justify-content-evenly align-items-center h-75">
+            <!-- options column, activated by hamburger for small -->
+            <div class="options d-md-flex col-md-3 col-lg-2 justify-content-center collapse" id="navbarText">
+                <ul class="mb-2 mb-lg-0 d-flex flex-row flex-md-column justify-content-evenly align-items-center h-75">
                     <li class="menu-item">
                         <a class="nav-link active" href="#">
                             <i class="fa-sharp fa-solid fa-user-secret"></i>
