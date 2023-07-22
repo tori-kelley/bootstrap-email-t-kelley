@@ -49,7 +49,7 @@
     </div>
 
     <!-- external searchbar to pop out for sm, activated by magnifying glass -->
-    <form class="d-md-none collapse w-100 align-self-end" id="searchbar" role="search">
+    <form class="d-md-none collapse w-100" id="searchbar" role="search">
         <div class="d-flex flex-row">
             <input class="search-input form-control me-2" type="search" placeholder="keyword" aria-label="Search">
             <button class="btn btn-outline-success" type="reset">Search</button>
@@ -128,33 +128,11 @@
                 </div>
             </div>
 
-            <!-- compose/reply column -->
-            <div class="compose-reply d-flex justify-content-around align-items-center col-lg-5 flex-column">
-
-                <!-- compose button -->
-                <h3 class="d-flex d-lg-none"><button class="btn" data-toggle="collapse" data-target="#composition-box">Compose a new message <i class="fa-regular fa-pen-to-square"></i></button></h3>
-                
-                <!-- composition box that pops up when compose button is activated -->
-                <div class="general-compose collapse navbar-collapse d-lg-none" id="composition-box">
-                    <div class="d-column input-group h-75">
-                        <span class="input-group-text" id="addon-wrapping">Subject:</span>
-                        <input type="text" class="form-control" aria-describedby="addon-wrapping">
-                        <input type="text" id="username" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <span class="input-group-text" id="basic-addon2">@anonymail.com</span>               
-                        <textarea class="form-control w-100" name="short_desc" placeholder="type your message here" required></textarea>
-                    </div>
-                    <div class="send-options w-100 d-flex flex-row justify-content-evenly">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">reveal my identity</label>
-                        </div>
-                        <button type="button" class="btn btn-outline-secondary send-button">Send<i class="fa-solid fa-paper-plane"></i></button>
-                    </div>
-                </div>
-
+            <!-- reply column (lg only) -->
+            <div class="col d-none d-lg-flex col-lg-5">
                 <!-- displayed message + reply-->
-                <div class="highlighted-message d-none d-lg-flex input-group h-75 flex-column">
-                    <div class="message-container d-flex justify-content-around flex-column">
+                <div class="highlighted-message d-none d-lg-flex input-group h-75">
+                    <div class="message-container d-flex flex-column">
                         <div class="d-flex flex-row justify-content-between">
 
                             <!-- subject -->
@@ -182,11 +160,38 @@
                         <p class="text-justify"><br>I know that you're the one who ate my sandwich, even though I CLEARLY marked it with my name. I guess you must've missed that, huh? I hope you don't mind, I helped myself to your stash of thin mint oreos, since APPARENTLY there's no such thing as private property in a communal fridge. <br> Maybe next time you'll think twice before you eat someone else's lunch. <br> <br>~ a Hangry Coworker</p>
                     </div>
 
-                    <!-- reply text box -->
-                    <textarea class="form-control w-100" name="short_desc" placeholder="reply..."></textarea>
+                    <div class="reply w-100 d-flex flex-column">
+                        <!-- reply text box -->
+                        <textarea class="form-control w-100 h-100" name="short_desc" placeholder="reply..."></textarea>
 
-                    <!-- send button -->
-                    <button type="button" class="send-button btn btn-outline-secondary align-self-end"> Send <i class="fa-solid fa-paper-plane"></i></button>
+                        <!-- send button -->
+                        <button type="button" class="send-button btn btn-outline-secondary align-self-end"> Send <i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- compose column -->
+            <div class="compose-reply d-flex justify-content-around align-items-center flex-column">
+
+                <!-- compose button -->
+                <h3 class="d-flex"><button class="btn" data-toggle="collapse" data-target="#composition-box">Compose a new message <i class="fa-regular fa-pen-to-square"></i></button></h3>
+                
+                <!-- composition box that pops up when compose button is activated -->
+                <div class="general-compose collapse navbar-collapse" id="composition-box">
+                    <div class="d-column input-group h-75">
+                        <span class="input-group-text" id="addon-wrapping">Subject:</span>
+                        <input type="text" class="form-control" aria-describedby="addon-wrapping">
+                        <input type="text" id="username" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@anonymail.com</span>               
+                        <textarea class="form-control w-100" name="short_desc" placeholder="type your message here" required></textarea>
+                    </div>
+                    <div class="send-options w-100 d-flex flex-row justify-content-evenly">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">reveal my identity</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary send-button">Send<i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
                 </div>
             </div>
         </div>    
